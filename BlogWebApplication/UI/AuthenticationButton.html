@@ -1,0 +1,52 @@
+﻿<%@ Import Namespace="BlogWebApplication.BLL" %>
+<%@ Import Namespace="BlogWebApplication.Model" %>
+<div class="container">
+    <div class="row">
+        <div class="col-md-12" style="height:100px; padding-top:10px ;">
+            <div class="col-md-10">
+                <div class="row">
+                    <div class="col-md-2">
+
+                        <a href="Home.aspx"><img src="../images/logo_04.png" title="Recurrence" alt="Logo" /></a>
+                    </div>
+                    <div class="col-md-10"></div>
+                </div>
+            </div>
+            <%
+            if (Session["user"] == null)
+            {
+            %>
+            <div class="col-md-1">
+                <a href="UserEntry.aspx">
+                    <button type="button" class="btn btn-primary">Sign Up</button>
+                </a>
+            </div>
+            <div class="col-md-1">
+                <a href="LogIn.aspx">
+                    <button type="button" class="btn btn-primary">Log In</button>
+                </a>
+            </div>
+            <%
+            }
+            else
+            {
+            User user = (User)Session["user"];
+            %>
+            <div class="col-md-1"></div>
+            <div class="col-md-1">
+                <div class="btn-group">
+                    <button type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown">
+                        <%=user.UserName%> <span class="caret"></span>
+                    </button>
+                    <ul class="dropdown-menu" role="menu">
+                        <li><a href="LogOut.aspx">Log Out</a></li>
+                    </ul>
+                </div>
+            </div>
+            <%
+            }
+            %>
+        </div>        
+    </div>
+</div>
+

@@ -1,0 +1,56 @@
+﻿/*p {
+    text-align: justify !important;
+}*/
+
+body{
+    background-image: url(../images/background.jpg)
+}
+
+.content {
+    background: #fff;
+    -webkit-box-shadow: 0 0 20px #eee;
+        box-shadow: 0 0 20px #eee;
+    margin-top: -20px;
+}
+
+img:hover {
+    border: 1px solid #337AB7;
+}
+
+.article:hover {
+    background: #eee;
+    transition: 1s all;
+}
+.list-unstyled li {
+    padding: 5px;
+}
+.list-unstyled li a:hover .badge {
+    background: #337AB7;
+    color:#fff;
+}
+
+table #signUp tr {
+    height: 100px;
+}
+
+header {
+    height: 100px;
+    background-image: url(~/images/header_01.jpg);
+}
+
+footer .bottom {
+    background-image: url(../images/background.jpg)
+}
+.navbar-inverse .navbar-nav > li > a {
+  color: #fff;
+}
+
+.navbar-inverse .navbar-nav > li > a:hover {
+    background: #000080;
+    transition: .5s all;
+}
+
+.navbar-inverse .navbar-nav > .active > a, .navbar-inverse .navbar-nav > .active > a:hover, .navbar-inverse .navbar-nav > .active > a:focus {
+  background-color: #000080;
+  color: #fff;
+}

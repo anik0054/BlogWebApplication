@@ -1,0 +1,22 @@
+﻿    
+<nav class="navbar navbar-inverse" style="margin-bottom:20px; background: #286090;">
+        <div class="container">
+            <div class="navbar-header">
+                <!--<a class="navbar-brand" href="Home.aspx">Recurrence Blog</a>-->
+            </div>
+            <div>
+                <ul class="nav navbar-nav">
+                    <li class="active"><a href="Home.aspx">Home</a></li>
+                    <li><a href="ArticleEntry.aspx">Write an article</a></li>
+                    <% if (Session["user"] != null)
+                    {
+                    %>
+                    <li><a href="MyArticle.aspx">My Articles</a></li>
+                    <%
+                    }
+                    %>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
